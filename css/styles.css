@@ -619,7 +619,7 @@ footer {
 
 /* Button */
 .button {
-    border: 0ch;
+    border: 0px;
     text-align: center;
     color: var(--title-text-color);
     background-color: var(--second-bg-color); 
@@ -767,6 +767,7 @@ footer {
     margin-bottom: 0;
 }
 
+/* Modal */
 .modal {
     position: absolute;
     top: 50%;
@@ -784,7 +785,7 @@ footer {
 
 .backdrop {
     position: fixed;
-    width: 1600px;
+    width: 100%;
     height: 1024px;
     left: 0px;
     top: 0px;
@@ -845,4 +846,113 @@ footer {
     margin-left: 4px;
     color: #FFFFFF;
     fill: currentColor;
+}
+
+.form {
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-title {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+}
+.form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-label{
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    
+    color: #757575;
+}
+
+.form-input {
+    height: 40px;
+    margin: 0px;
+    padding: 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment {
+    padding: 12px 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+}
+
+::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.police-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.police {
+    margin-top: 20px;
+}
+
+.police-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7em;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+textarea {
+    resize: none;
+}
+
+.police-link {
+    text-decoration-line: underline;
+    color: #2196F3;
+}
+
+.send {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-modal {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+
+    display: inline-block;
+}
+
+.form-input:focus-within ~ .icon-modal {
+    fill: var(--accent-color);
+}
+
+.comment {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
 }
